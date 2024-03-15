@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+  --green: #166c00;
+  --light-green: #5cc542;
+  --light-blue: #dfe7ef;
+  --white: #ffffff;
+}
