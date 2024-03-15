@@ -1,9 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+import { DefaultLayout } from "./layout/DefaultLayout";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <DefaultLayout>
+        <div>Hello world!</div>
+      </DefaultLayout>
+    ),
+  },
+  {
+    path: "/form",
+    element: (
+      <DefaultLayout>
+        <div>This is a form</div>
+      </DefaultLayout>
+    ),
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <div>Hello world</div>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
