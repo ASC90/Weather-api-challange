@@ -21,6 +21,30 @@
   height: 100vh;
   --green: #166c00;
   --light-green: #5cc542;
+  --success-green: #93d683;
+  --success-dark-green: #24810d;
+  --lighter-green: #edfde9;
   --light-blue: #dfe7ef;
+  --blue: #719ece;
+  --dark-blue: #406e9f;
   --white: #ffffff;
+  --grey: #898989;
+  --dark-grey: #444444;
+  --red: #ff0000;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 15px 0;
+}
+
+.center-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
