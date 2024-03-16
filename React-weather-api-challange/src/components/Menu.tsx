@@ -7,7 +7,7 @@ export const Menu = () => {
   return (
     <nav>
       <div>
-        <h1 style={{ textAlign: "center", color: "#5cc542" }}>TechnicalTest</h1>
+        <h1 className="title">TechnicalTest</h1>
         <br />
         <h3>Sections</h3>
         <ul>
@@ -23,7 +23,7 @@ export const Menu = () => {
           </li>
         </ul>
       </div>
-      <div className="logo">
+      <div className="logo center-flexbox">
         <img src="" alt="Logo" />
       </div>
     </nav>

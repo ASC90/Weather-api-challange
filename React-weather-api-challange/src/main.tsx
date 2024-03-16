@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import { DefaultLayout } from "./layout/DefaultLayout";
+import { FormValidation } from "./routes/FormValidation";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
     path: "/form",
     element: (
       <DefaultLayout>
-        <div>This is a form</div>
+        <FormValidation />
       </DefaultLayout>
     ),
   },

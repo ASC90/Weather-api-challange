@@ -1,0 +1,43 @@
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper svg {
+  height: 20px;
+  padding: 1px;
+  padding-left: 10px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+}
+
+.input-wrapper svg path {
+  stroke: var(--dark-grey);
+  fill: var(--dark-grey);
+}
+
+input.input {
+  padding: 10px;
+  width: 50vw;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+input.input.error {
+  border: 1.5px solid var(--red) !important;
+}
+
+input.input:focus {
+  border: 1.5px solid var(--dark-blue) !important;
+  box-shadow: 0 0 5px 5px var(--blue);
+  outline: none !important;
+}
+
+div.errorMsg {
+  color: var(--red);
+  margin: 5px 0;
+  font-size: 0.8rem;
+}

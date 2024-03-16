@@ -1,0 +1,33 @@
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  flex-direction: row;
+}
+
+.button:hover {
+  filter: brightness(0.8);
+}
+
+.button:active {
+  filter: brightness(1.2);
+}
+
+.button__success {
+  background-color: var(--success-green);
+  color: var(--success-dark-green);
+}
+
+.button__success h4 {
+  color: var(--success-dark-green) !important;
+}
+
+.button--icon svg {
+  height: 15px;
+  margin-right: 5px;
+}
+
+.button--icon__success svg path {
+  stroke: var(--success-dark-green);
+  fill: var(--success-dark-green);
+}
