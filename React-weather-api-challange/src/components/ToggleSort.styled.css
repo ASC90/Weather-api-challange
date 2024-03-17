@@ -1,0 +1,24 @@
+a.toggle-sort svg {
+  height: 15px;
+  padding: 0 10px;
+}
+
+a.toggle-sort {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 1200px), (orientation: portrait) {
+  a.toggle-sort svg {
+    max-height: 10px;
+    padding: 0 5px;
+  }
+  a.toggle-sort {
+    justify-content: center;
+  }
+  a.toggle-sort h4 {
+    text-align: center;
+  }
+}

@@ -1,10 +1,32 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
+import { DefaultLayout } from "./layout/DefaultLayout";
+import { FormValidation } from "./routes/FormValidation";
+import { WeatherDashboard } from "./routes/WeatherDashboard";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <DefaultLayout>
+        <WeatherDashboard />
+      </DefaultLayout>
+    ),
+  },
+  {
+    path: "/form",
+    element: (
+      <DefaultLayout>
+        <FormValidation />
+      </DefaultLayout>
+    ),
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);

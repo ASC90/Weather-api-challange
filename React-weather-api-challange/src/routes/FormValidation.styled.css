@@ -1,0 +1,23 @@
+.form__green {
+  background-color: var(--lighter-green);
+  height: 100%;
+}
+
+p {
+  margin: 10px 10px;
+  text-align: center;
+}
+
+.form__green h1 {
+  color: var(--green);
+}
+
+.form__green h4 {
+  color: var(--light-green);
+}
+
+@media (max-width: 1200px), (orientation: portrait) {
+  li.min-content__width {
+    width: min-content;
+  }
+}
