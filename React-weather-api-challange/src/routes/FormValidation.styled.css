@@ -4,7 +4,8 @@
 }
 
 p {
-  margin: 10px 0;
+  margin: 10px 10px;
+  text-align: center;
 }
 
 .form__green h1 {
@@ -13,4 +14,10 @@ p {
 
 .form__green h4 {
   color: var(--light-green);
+}
+
+@media (max-width: 1200px), (orientation: portrait) {
+  li.min-content__width {
+    width: min-content;
+  }
 }

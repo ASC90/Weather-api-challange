@@ -69,7 +69,7 @@ export const Input = ({
       <div className="input-wrapper">
         {icon && icon}
         <input
-          placeholder={`${placeholder} ${required && "*"}`}
+          placeholder={`${required && "*"} ${placeholder}`}
           type="text"
           className={`input ${isInvalid && isActiveValidation ? "error" : ""}`}
           style={icon ? { paddingLeft: "35px" } : {}}
