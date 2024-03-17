@@ -4,13 +4,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import { DefaultLayout } from "./layout/DefaultLayout";
 import { FormValidation } from "./routes/FormValidation";
+import { WeatherDashboard } from "./routes/WeatherDashboard";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <DefaultLayout>
-        <div>Hello world!</div>
+        <WeatherDashboard />
       </DefaultLayout>
     ),
   },

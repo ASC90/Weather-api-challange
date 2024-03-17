@@ -40,7 +40,7 @@ export const FormValidation = () => {
       ) : (
         <form action="" className="center-flexbox">
           <ul>
-            <li className="center-flexbox">
+            <li className="center-flexbox min-content__width">
               <Input
                 required={true}
                 type={InputType.Text}
@@ -53,7 +53,7 @@ export const FormValidation = () => {
                 inputIsInvalid={(invalid) => setEmail({ ...email, invalid })}
               />
             </li>
-            <li className="center-flexbox">
+            <li className="center-flexbox min-content__width">
               <Input
                 required={true}
                 type={InputType.Currency}
@@ -69,7 +69,7 @@ export const FormValidation = () => {
                 }
               />
             </li>
-            <li className="center-flexbox">
+            <li className="center-flexbox min-content__width">
               <Input
                 required={true}
                 type={InputType.Text}
